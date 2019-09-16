@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: lightgray;
+}
+
+.container {
+  width: 768px;
+  background-color: pink;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.large-letter-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-letter-group h1 {
+  background-color: lightblue;
+  width: 325px;
+  height: 325px;
+  margin-bottom: 10px;
+}
+
+.large-letter-group button {
+  background-color: lightblue;
+  width: 150px;
+  height: 60px;
+}
+
+.letter-set {
+  background-color: lightblue;
+  height: 80px;
+  margin-top: 40px;
+}
+
+.main-copy {
+  background-color: lightblue;
+  display: flex;
+}
+
+footer {
+  display: flex;
+}
+
+footer img {
+  height: 100px;
+  margin-left: 10px;
+}
+
+footer .author-heading {
+  background-color: lightblue;
+  width: 200px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+footer .sources-section {
+  background-color: lightblue;
+  width: 330px;
+}

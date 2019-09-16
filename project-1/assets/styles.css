@@ -1,0 +1,47 @@
+body {
+  background-color: #D3D3D3;
+  font-family: Book Antiqua, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 768px;
+  height: 1024px;
+  margin: 0 auto;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 491px;
+}
+
+.header {
+  height: 60px;
+}
+
+.letter-container {
+  width: 491px;
+  display: flex;
+  align-item: baseline;
+}
+
+.letter-container h1 {
+  font-size: 449px;
+  font-weight: 900;
+  margin-left: 31.28px;
+  margin-right: 13.55px;
+  margin-top: -60px;
+  margin-bottom: 8px;
+}
+
+#button {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #fd753f;
+}
