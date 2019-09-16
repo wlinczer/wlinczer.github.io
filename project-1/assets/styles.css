@@ -1,47 +1,123 @@
 body {
-  background-color: #D3D3D3;
   font-family: Book Antiqua, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  margin: 0;
+  color: #FFFFFF;
   padding: 0;
+  margin: 0;
+  background: lightgray;
 }
 
-.container{
+a {
+  color: #FFFFFF;
+}
+
+.container {
+  background-image: url('background.png');
   width: 768px;
-  height: 1024px;
-  margin: 0 auto;
-}
-
-.box {
-  margin-left: auto;
   margin-right: auto;
-  width: 491px;
+  margin-left: auto;
 }
 
-.header {
-  height: 60px;
-}
-
-.letter-container {
-  width: 491px;
+.main-copy {
+  font-family: Book Antiqua, serif;
+  font-style: normal;
+  font-size: 16px;
   display: flex;
-  align-item: baseline;
+  height: content;
 }
 
-.letter-container h1 {
-  font-size: 449px;
-  font-weight: 900;
-  margin-left: 31.28px;
-  margin-right: 13.55px;
-  margin-top: -60px;
-  margin-bottom: 8px;
+.main-copy #para-one {
+  width: 50%;
+  margin-left: 35px;
+  margin-right: 10px;
+  margin-top: 30px;
 }
 
-#button {
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  background-color: #fd753f;
+.main-copy #para-one strong {
+  font-family: "baroque-text-jf", serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.main-copy #para-two {
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 35px;
+  margin-top: 38px;
+}
+
+.letter-set {
+  height: 80px;
+  margin-top: 350px;
+  margin-bottom: 10px;
+  font-family: 'baroque-text-jf', serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #C98F4F;
+  text-align: center;
+}
+
+.large-letter-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #C98F4F;
+}
+
+.large-letter-group h1 {
+  width: 325px;
+  height: 325px;
+  margin-top: -80px;
+  margin-bottom: 50px;
+  font-size: 300px;
+  font-weight: 400;
+  font-family: 'baroque-text-jf', serif;
+}
+
+.large-letter-group button {
+  width: 150px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  margin-top: 0px;
+}
+
+footer .sources-section {
+  width: 50%;
+  margin-left: 30px;
+}
+
+footer .source-section h4 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+footer .source-section p {
+  font-size: 14px;
+  line-height: 5px;
+}
+
+footer .name-and-major {
+  display: flex;
+}
+
+footer .author-heading {
+  width: content;
+  height: 90px;
+  margin-left: 10px;
+  line-height: 5px;
+}
+
+.author-heading h4, h6 {
+  text-align: right;
+  margin-top: 0px;
+}
+
+footer img {
+  height: 100px;
+  margin-left: 10px;
 }
