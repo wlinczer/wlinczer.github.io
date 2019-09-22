@@ -1,0 +1,27 @@
+body {
+  color: #121212;
+  background-color: #F4F4F4;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #5C5C5C;
+}
+
+.container {
+  width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title-container {
+  font-family: industry-inc-base, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
