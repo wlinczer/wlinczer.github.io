@@ -59,11 +59,11 @@ a {
   font-size: 50px;
   letter-spacing: 19px;
   font-weight: 400;
-  color: #C98F4F;
+  color: #FFC788;
   background: linear-gradient(to right,
-      #C98F4F,
-      transparent,
-      #C98F4F);
+      #FFC788,
+      #FFD7AB,
+      #FFC788);
 }
 
 ::-webkit-scrollbar {
@@ -82,7 +82,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #A0723F;
+  background: #BE8342;
 }
 
 .large-letter-group {
