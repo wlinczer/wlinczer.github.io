@@ -47,7 +47,7 @@ a {
 }
 
 .letter-set {
-  height: 90px;
+  height: 80px;
   width: 75%;
   margin-top: 350px;
   margin-left: auto;
@@ -60,25 +60,29 @@ a {
   letter-spacing: 19px;
   font-weight: 400;
   color: #C98F4F;
+  background: linear-gradient(to right,
+      #C98F4F,
+      transparent,
+      #C98F4F);
 }
 
 ::-webkit-scrollbar {
-width: 12px;
-height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-border: 1px solid #C98F4F;
-border-radius: 10px;
+  border: 1px solid #C98F4F;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #C98F4F;
-border-radius: 10px;
+  background: #C98F4F;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #A0723F;
+  background: #A0723F;
 }
 
 .large-letter-group {
