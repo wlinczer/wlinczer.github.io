@@ -1,8 +1,6 @@
 body {
   font-family: Book Antiqua, sans-serif;
   color: #FFFFFF;
-  padding: 0;
-  margin: 0;
   background: lightgray;
 }
 
@@ -22,14 +20,11 @@ a {
   font-style: normal;
   font-size: 16px;
   display: flex;
-  height: content;
 }
 
 .main-copy #para-one {
   width: 50%;
-  margin-left: 35px;
-  margin-right: 10px;
-  margin-top: 30px;
+  height: content;
 }
 
 .main-copy #para-one strong {
@@ -41,18 +36,14 @@ a {
 
 .main-copy #para-two {
   width: 50%;
-  margin-left: 10px;
-  margin-right: 35px;
-  margin-top: 38px;
+  height: content;
 }
 
 .letter-set {
   height: 80px;
   width: 75%;
-  margin-top: 350px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
   overflow-y: hidden;
   overflow-x: scroll;
   font-family: 'baroque-text-jf', serif;
@@ -96,8 +87,6 @@ a {
 .large-letter-group h1 {
   width: 325px;
   height: 325px;
-  margin-top: -70px;
-  margin-bottom: 50px;
   font-size: 300px;
   font-weight: 400;
   font-family: 'baroque-text-jf', serif;
@@ -113,17 +102,11 @@ a {
 
 .large-letter-group .x-button button {
   color: transparent;
-  position: relative;
-  left: 25%;
-  top: 114%;
   width: 150px;
   height: 80px;
-  z-index: 1;
 }
 
 .large-letter-group .x-button img {
-  position: static;
-  z-index: -1;
 }
 
 footer {
@@ -153,16 +136,13 @@ footer .name-and-major {
 footer .author-heading {
   width: content;
   height: 90px;
-  margin-left: 10px;
   line-height: 5px;
 }
 
 .author-heading h4, h6 {
   text-align: right;
-  margin-top: 0px;
 }
 
 footer img {
   height: 100px;
-  margin-left: 10px;
 }
