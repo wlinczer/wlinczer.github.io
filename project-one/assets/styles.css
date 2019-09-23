@@ -47,14 +47,38 @@ a {
 }
 
 .letter-set {
-  height: 80px;
+  height: 90px;
+  width: 75%;
   margin-top: 350px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
   font-family: 'baroque-text-jf', serif;
   font-size: 50px;
+  letter-spacing: 19px;
   font-weight: 400;
   color: #C98F4F;
-  text-align: center;
+}
+
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #C98F4F;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #C98F4F;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #A0723F;
 }
 
 .large-letter-group {
@@ -68,17 +92,26 @@ a {
 .large-letter-group h1 {
   width: 325px;
   height: 325px;
-  margin-top: -80px;
+  margin-top: -70px;
   margin-bottom: 50px;
   font-size: 300px;
   font-weight: 400;
   font-family: 'baroque-text-jf', serif;
 }
 
-.large-letter-group button {
+.large-letter-group .x-button button {
+  color: transparent;
+  position: relative;
+  left: 25%;
+  top: 114%;
   width: 150px;
-  height: 60px;
-  margin-bottom: 10px;
+  height: 80px;
+  z-index: 1;
+}
+
+.large-letter-group .x-button img {
+  position: static;
+  z-index: -1;
 }
 
 footer {
