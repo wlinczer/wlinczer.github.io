@@ -5,8 +5,10 @@
   <title>
     My Favorite Letterform
   </title>
-  <link rel="stylesheet" href="https://use.typekit.net/lmp8luf.css">
   <link rel='stylesheet' href='assets\styles.css'>
+  <link rel="stylesheet" href="https://use.typekit.net/lmp8luf.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src='assets\toggle.jquery.js'></script>
 </head>
 
 <body>
@@ -43,10 +45,14 @@
         <div class='large-letter'>
           <h1>S</h1>
         </div>
+        <div class='letter-analysis'>
+          <img id='front-circles' src='assets\Front_Circles-01.svg'>
+          <img id='back-circles' src='assets\Back_Circles_Coins-01.svg'>
+        </div>
         <!-- Button -->
         <div class='x-button'>
           <img src="assets\X.png" alt='X'>
-          <button class='button'>
+          <button id='button'>
             Button
           </button>
         </div>

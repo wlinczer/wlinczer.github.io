@@ -103,6 +103,14 @@ a {
   font-family: 'baroque-text-jf', serif;
 }
 
+.letter-analysis {
+  visibility: hidden;
+}
+
+.letter-analysis.visible {
+  visibility:visible;
+}
+
 .large-letter-group .x-button button {
   color: transparent;
   position: relative;
