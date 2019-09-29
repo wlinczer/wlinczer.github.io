@@ -15,9 +15,10 @@ a:hover {
 }
 
 .container {
-  background-image: url('background.png');
+  background-image: url('background.jpg');
   width: 768px;
   height: 1328px;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
 }
@@ -30,7 +31,7 @@ a:hover {
 }
 
 .main-copy #para-one {
-  width: 50%;
+  width: 55%;
   height: content;
   margin-top: 30px;
   margin-left: 30px;
@@ -55,9 +56,10 @@ a:hover {
 .letter-set {
   height: 80px;
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 385px;
+  position: relative;
+  top: 250px;
+  left: 100px;
+  z-index: 99;
   overflow-y: hidden;
   overflow-x: scroll;
   border-radius: 10px;
@@ -68,7 +70,7 @@ a:hover {
   color: #FFC788;
   background: linear-gradient(to right,
       #FFC788,
-      #FFD7AB,
+      #FFEAD2,
       #FFC788);
 }
 
@@ -107,7 +109,7 @@ a:hover {
   font-weight: 400;
   font-family: 'baroque-text-jf', serif;
   position: absolute;
-  top: -260px;
+  top: 0px;
   left: 210px;
   z-index: 1;
 }
@@ -123,7 +125,7 @@ a:hover {
 
 .letter-analysis img {
   position: absolute;
-  top: -112px;
+  top: 150px;
   left: -237px;
   width: 450px;
 }
@@ -149,7 +151,7 @@ a:hover {
 
 .x-button {
   position: relative;
-  top: 300px;
+  top: 650px;
   z-index: 3;
 }
 
@@ -163,7 +165,7 @@ a:hover {
 
 footer {
   display: flex;
-  margin-top: 270px;
+  margin-top: 670px;
   margin-bottom: 0px;
 }
 
