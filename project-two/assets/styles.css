@@ -1,28 +1,71 @@
-div.progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background-color: gray;
-  z-index: 99;
-  transition: color 0.5s;
+.outer-wrapper {
+  width: 100vh;
+  height: 31700px;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: 4px;
+  -ms-overflow-style: none;
 }
 
-.horizontal-container {
-  margin-left: auto;
-  margin-right: auto;
-  height: 1024px;
-  width: 768px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  background-color: lightgray;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.fun-square {
-  width: 5em;
-  height: 5em;
-  background-color: black;
+.wrapper {
+  display: flex;
   position: relative;
-  left: 20em;
+  right: 8%;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: row;
+  width: 31700px;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.container {
+  height: 768px;
+  width: 31700px;
+  display: flex;
+  background-image: url("background-image.png");
+  background-repeat: repeat-x;
+}
+
+.welcome {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 300px;
+  background: white;
+  opacity: 50%;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.info-snackbar {
+  position: absolute;
+  z-index: 3;
+  top: 80px;
+  left: 0px;
+  height: 30px;
+  width: 300px;
+  background-color: green;
+}
+
+.sun-container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 768px;
+  width: 400px;
+  background: yellow;
+  opacity: 50%;
 }
