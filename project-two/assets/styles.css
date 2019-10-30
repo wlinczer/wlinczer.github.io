@@ -1,6 +1,6 @@
 .outer-wrapper {
   width: 100vh;
-  height: 31700px;
+  height: 38000px;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: scroll;
@@ -21,16 +21,17 @@
   margin-top: auto;
   margin-bottom: auto;
   flex-direction: row;
-  width: 31700px;
+  width: 3800px;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 
 .container {
   height: 768px;
-  width: 31700px;
+  width: 38000px;
   display: flex;
-  background-image: url("background-image.png");
+  position: absolute;
+  background-image: url("background-image-1.png"), url("background-image-2"), url("background-image-3");
   background-repeat: repeat-x;
 }
 
@@ -59,13 +60,151 @@
   background-color: green;
 }
 
+.celestial-body {
+  display: flex;
+  position:
+  absolute;
+}
+
 .sun-container {
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
   height: 768px;
-  width: 400px;
+  width: 540px;
   background: yellow;
   opacity: 50%;
+}
+
+.mercury-container {
+  position: absolute;
+  top: 0px;
+  left: 909px;
+  z-index: 1;
+  height: 768px;
+  width: 31px;
+  background: gray;
+  opacity: 50%;
+}
+
+.venus-container {
+  position: absolute;
+  top: 0px;
+  left: 1211px;
+  z-index: 1;
+  height: 768px;
+  width: 75px;
+  background: orange;
+  opacity: 50%;
+}
+
+.earth-container {
+  position: absolute;
+  top: 0px;
+  left: 1470px;
+  z-index: 1;
+  height: 768px;
+  width: 80px;
+  background: blue;
+  opacity: 50%;
+}
+
+.mars-container {
+  position: absolute;
+  top: 0px;
+  left: 1956px;
+  z-index: 1;
+  height: 768px;
+  width: 42px;
+  background: red;
+  opacity: 50%;
+}
+
+.astro-belt-container {
+  position: absolute;
+  top: 0px;
+  left: 2496px;
+  z-index: 1;
+  height: 768px;
+  width: 2500px;
+  background: gray;
+  opacity: 50%;
+}
+
+.jupiter-container {
+  position: absolute;
+  top: 0px;
+  left: 5378px;
+  z-index: 1;
+  height: 768px;
+  width: 888px;
+  background: tan;
+  opacity: 50%;
+}
+
+.saturn-container {
+  position: absolute;
+  top: 0px;
+  left: 9447px;
+  z-index: 1;
+  height: 768px;
+  width: 749px;
+  background: red;
+  opacity: 50%;
+}
+
+.uranus-container {
+  position: absolute;
+  top: 0px;
+  left: 18380px;
+  z-index: 1;
+  height: 768px;
+  width: 318px;
+  background: blue;
+  opacity: 50%;
+}
+
+.neptune-container {
+  position: absolute;
+  top: 0px;
+  left: 28470px;
+  z-index: 1;
+  height: 768px;
+  width: 308px;
+  background: green;
+  opacity: 50%;
+}
+
+.kupier-belt-container {
+  position: absolute;
+  top: 0px;
+  left: 27880px;
+  z-index: 1;
+  height: 768px;
+  width: 308px;
+  background: gray;
+  opacity: 50%;
+}
+
+.kupier-belt-container {
+  position: absolute;
+  top: 0px;
+  left: 36701px;
+  z-index: 1;
+  height: 768px;
+  width: 1299px;
+  background: gray;
+  opacity: 50%;
+}
+
+.pluto-container {
+  position: absolute;
+  top: 0px;
+  left: 37241px;
+  z-index: 1;
+  height: 768px;
+  width: 14px;
+  background: gray;
+  opacity: 75%;
 }
