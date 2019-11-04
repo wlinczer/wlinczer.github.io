@@ -7,11 +7,19 @@ body {
 }
 
 a {
+  display:block;
   color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 8px;
 }
 
 a:hover {
   color: #5C5C5C;
+  text-decoration: underline;
 }
 
 .container {
