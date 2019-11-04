@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 .outer-wrapper {
   width: 100vh;
   height: 38000px;
@@ -6,18 +11,12 @@
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-  scrollbar-width: 4px;
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .wrapper {
   display: flex;
   position: relative;
-  right: 8%;
+  right: 0px;
   margin-top: auto;
   margin-bottom: auto;
   flex-direction: row;
@@ -31,14 +30,24 @@
   width: 38000px;
   display: flex;
   position: absolute;
-  background-image: url("background-image-1.png"), url("background-image-2"), url("background-image-3");
-  background-repeat: repeat-x;
+  background-image: url('background-image-fixed.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button {
+  height: 30px;
+  width: 300px;
+  border: solid 2px;
+  border-radius: 8px;
 }
 
 .welcome {
   position: absolute;
+  top: 0px;
+  left: 300px;
   z-index: 2;
-  height: 100px;
+  height: 50px;
   width: 300px;
   background: white;
   opacity: 50%;
@@ -53,17 +62,26 @@
 .info-snackbar {
   position: absolute;
   z-index: 3;
-  top: 80px;
+  top: 50px;
   left: 0px;
   height: 30px;
   width: 300px;
   background-color: green;
 }
 
+.introduction.invisible {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.introduction {
+  opacity: 1
+}
+
 .celestial-body {
   display: flex;
   position:
-  absolute;
+    absolute;
 }
 
 .sun-container {
@@ -72,42 +90,40 @@
   left: 0px;
   z-index: 1;
   height: 768px;
-  width: 540px;
-  background: yellow;
-  opacity: 50%;
+  width: 1700px;
+  background-image: url('sun-vector-img.png');
+  background-repeat: no-repeat;
 }
 
 .mercury-container {
   position: absolute;
-  top: 0px;
+  top: 200px;
   left: 909px;
-  z-index: 1;
+  z-index: 2;
   height: 768px;
   width: 31px;
-  background: gray;
-  opacity: 50%;
 }
 
 .venus-container {
   position: absolute;
-  top: 0px;
+  top: 550px;
   left: 1211px;
   z-index: 1;
   height: 768px;
   width: 75px;
-  background: orange;
-  opacity: 50%;
 }
 
 .earth-container {
   position: absolute;
-  top: 0px;
+  top: 250px;
   left: 1470px;
   z-index: 1;
   height: 768px;
   width: 80px;
-  background: blue;
-  opacity: 50%;
+}
+
+.earth-container img {
+  transform: rotate(23deg);
 }
 
 .mars-container {
