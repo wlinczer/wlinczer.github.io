@@ -142,8 +142,6 @@ button {
   z-index: 1;
   height: 768px;
   width: 2500px;
-  background: gray;
-  opacity: 50%;
 }
 
 .jupiter-container {
@@ -185,30 +183,16 @@ button {
 .kupier-belt-container {
   position: absolute;
   top: 0px;
-  left: 27880px;
-  z-index: 1;
-  height: 768px;
-  width: 308px;
-  background: gray;
-  opacity: 50%;
-}
-
-.kupier-belt-container {
-  position: absolute;
-  top: 0px;
   left: 36701px;
   z-index: 1;
   height: 768px;
   width: 1299px;
-  background: gray;
-  opacity: 50%;
-}
 
 .pluto-container {
   position: absolute;
   top: 377px;
   left: 37241px;
-  z-index: 1;
+  z-index: 2;
   height: 768px;
   width: 14px;
 }
