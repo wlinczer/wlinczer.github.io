@@ -157,35 +157,29 @@ button {
 
 .saturn-container {
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 9447px;
   z-index: 1;
   height: 768px;
   width: 749px;
-  background: red;
-  opacity: 50%;
 }
 
 .uranus-container {
   position: absolute;
-  top: 0px;
+  top: 225px;
   left: 18380px;
   z-index: 1;
   height: 768px;
   width: 318px;
-  background: blue;
-  opacity: 50%;
 }
 
 .neptune-container {
   position: absolute;
-  top: 0px;
+  top: 230px;
   left: 28470px;
   z-index: 1;
   height: 768px;
   width: 308px;
-  background: green;
-  opacity: 50%;
 }
 
 .kupier-belt-container {
@@ -212,11 +206,9 @@ button {
 
 .pluto-container {
   position: absolute;
-  top: 0px;
+  top: 377px;
   left: 37241px;
   z-index: 1;
   height: 768px;
   width: 14px;
-  background: gray;
-  opacity: 75%;
 }
