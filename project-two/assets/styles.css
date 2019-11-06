@@ -1,3 +1,27 @@
+body {
+  overflow-y: hidden;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+button {
+  border: solid 2px white;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  color: white;
+  background-color: transparent;
+}
+
+button:hover {
+  border: solid 2px lightblue;
+  color: lightblue;
+
+}
+
 .outer-wrapper {
   width: 100vh;
   height: 38000px;
@@ -23,6 +47,8 @@
 .container {
   height: 768px;
   width: 38000px;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
   display: flex;
   position: absolute;
   background-image: url('background-image-fixed.png');
@@ -33,11 +59,10 @@
 .welcome {
   position: absolute;
   top: 0px;
-  left: 300px;
+  left: 600px;
   z-index: 2;
   height: 50px;
   width: 300px;
-  background-color: white;
 }
 
 .title {
@@ -56,20 +81,22 @@
 }
 
 .intro-button-initial {
-  border: white solid 2px;
-  border-radius: 8px;
-  position: relative;
+  position: absolute;
+  z-index: 4;
   top: 0px;
   left: 0px;
+}
+
+.intro-button-initial.invisible {
+  z-index: 1;
 }
 
 .introduction {
   position: absolute;
   z-index: 3;
-  top: 30px;
+  top: 0px;
   width: 300px;
   height: 200px;
-  background-color: white;
 }
 
 .intro-button-close {
@@ -90,11 +117,6 @@
   transition: opacity .2s ease-in-out;
 }
 
-.celestial-body {
-  display: flex;
-  position: absolute;
-}
-
 .sun-container {
   position: absolute;
   top: 0px;
@@ -102,7 +124,7 @@
   z-index: 1;
   height: 768px;
   width: 1700px;
-  background-image: url('sun-vector-img.png');
+  background-image: url('sun-vector-image.png');
   background-repeat: no-repeat;
 }
 
