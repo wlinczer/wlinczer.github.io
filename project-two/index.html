@@ -1,11 +1,13 @@
 <html lang='en'>
 
 <head>
+
   <title>
     Scaled Solor System
   </title>
   <link rel='stylesheet' href='assets\styles.css'>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='assets\toggle.jquery.js' type="text/javascript"></script>
 </head>
 
 <body>
@@ -15,15 +17,22 @@
       <div class="container">
         <div class='welcome'>
           <h1 class='title'> The Solar System </h1>
-          <div class="info-snackbar">
-            <button class='info-button'></button>
+          <div class="intro-container">
+            <button class='intro-button-initial'>Button</button>
             <div class='introduction invisible'>
-
+              <p> Introduction </p>
+              <button class='intro-button-close'> X </button>
             </div>
           </div>
         </div>
 
-        <div class="sun-container"> </div>
+        <div class="sun-container">
+          <button class='sun-button-initial'>Button</button>
+          <div class='sun-info invisible'>
+            <p> Sun </p>
+            <button class='sun-button-close'> X </button>
+          </div>
+        </div>
         <div class='mercury-container'>
           <img src='assets/mercury-vector-image.png'></img>
         </div>

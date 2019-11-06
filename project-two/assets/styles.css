@@ -1,8 +1,3 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
 .outer-wrapper {
   width: 100vh;
   height: 38000px;
@@ -35,13 +30,6 @@ body {
   background-attachment: fixed;
 }
 
-button {
-  height: 30px;
-  width: 300px;
-  border: solid 2px;
-  border-radius: 8px;
-}
-
 .welcome {
   position: absolute;
   top: 0px;
@@ -49,8 +37,7 @@ button {
   z-index: 2;
   height: 50px;
   width: 300px;
-  background: white;
-  opacity: 50%;
+  background-color: white;
 }
 
 .title {
@@ -59,29 +46,53 @@ button {
   margin: 0px;
 }
 
-.info-snackbar {
+.intro-container {
   position: absolute;
   z-index: 3;
   top: 50px;
   left: 0px;
-  height: 30px;
+  height: 768px;
   width: 300px;
-  background-color: green;
 }
 
-.introduction.invisible {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.intro-button-initial {
+  border: white solid 2px;
+  border-radius: 8px;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 .introduction {
-  opacity: 1
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+}
+
+.intro-button-close {
+  border: white solid 2px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.invisible {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
 }
 
 .celestial-body {
   display: flex;
-  position:
-    absolute;
+  position: absolute;
 }
 
 .sun-container {
