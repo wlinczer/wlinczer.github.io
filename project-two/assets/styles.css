@@ -5,6 +5,35 @@ body {
   color: white;
 }
 
+p {
+  margin: 0px;
+  margin-top: 30px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 400;;
+  text-align: justify;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-hover {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+
 button {
   border: solid 2px white;
   border-radius: 8px;
@@ -12,14 +41,16 @@ button {
   z-index: 5;
   top: 0px;
   left: 0px;
+  width: auto;
+  height: 20px;
   color: white;
   background-color: transparent;
+  animation: shadow-pulse 1s infinite;
 }
 
 button:hover {
-  border: solid 2px lightblue;
-  color: lightblue;
-
+  background-color: rgba(255,255,255,0.2);
+  animation: shadow-pulse-hover 1s infinite;
 }
 
 .outer-wrapper {
@@ -59,7 +90,7 @@ button:hover {
 .welcome {
   position: absolute;
   top: 0px;
-  left: 600px;
+  left: 555px;
   z-index: 2;
   height: 50px;
   width: 300px;
@@ -85,6 +116,7 @@ button:hover {
   z-index: 4;
   top: 0px;
   left: 0px;
+  width: 300px;
 }
 
 .intro-button-initial.invisible {
