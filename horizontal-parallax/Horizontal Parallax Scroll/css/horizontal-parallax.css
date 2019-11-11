@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Georgia', sans-serif;
+    font-size: 36px;
+    line-height: 1.25;
+    color: #333;
+    overflow-y: hidden;
+}
+
+header {
+  position: fixed;
+  top: 36px;
+  left: 36px;
+  z-index: 99;
+  transition: color 0.5s;
+}
+
+
+div.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 10px;
+    background-color: #333;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.container {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 100vw;
+    height: 70vh;
+    background-color: aqua;
+}
+
+.c2,
+.c4 {
+    background-color: lightgray;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Circle Positioning */
+
+.circle.cir1 {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.circle.cir2 {
+    position: absolute;
+    bottom: 75px;
+    left: 400px;
+}
+
+.circle.cir3 {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+
+.circle.cir4 {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+}
+
+
+/* Circle Colors */
+.c1 .circle {
+    background-color: yellowgreen;
+}
+
+.c2 .circle {
+    background-color: cornflowerblue;
+}
+
+.c3 .circle {
+    background-color: chocolate;
+}
+
+.c4 .circle {
+    background-color: blueviolet;
+}
+
+div.flex-container,
+div.wrapper {
+    display:flex;
+/*    overflow:auto;*/
+}

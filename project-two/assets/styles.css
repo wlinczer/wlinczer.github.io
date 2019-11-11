@@ -5,13 +5,25 @@ body {
   color: white;
 }
 
+h1 {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 400;
+}
+
 p {
   margin: 0px;
   margin-top: 30px;
   padding: 0px;
-  font-size: 18px;
-  font-weight: 400;;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  ;
   text-align: justify;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 768;
+  width: 300px;
 }
 
 @keyframes shadow-pulse {
@@ -20,7 +32,7 @@ p {
   }
 
   100% {
-    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
   }
 }
 
@@ -30,7 +42,7 @@ p {
   }
 
   100% {
-    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
 }
 
@@ -42,14 +54,16 @@ button {
   top: 0px;
   left: 0px;
   width: auto;
-  height: 20px;
+  height: auto;
   color: white;
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
   background-color: transparent;
   animation: shadow-pulse 1s infinite;
 }
 
 button:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   animation: shadow-pulse-hover 1s infinite;
 }
 
@@ -92,7 +106,7 @@ button:hover {
   top: 0px;
   left: 555px;
   z-index: 2;
-  height: 50px;
+  height: 60px;
   width: 300px;
 }
 
@@ -105,7 +119,7 @@ button:hover {
 .intro-container {
   position: absolute;
   z-index: 3;
-  top: 50px;
+  top: 60px;
   left: 0px;
   height: 768px;
   width: 300px;
@@ -135,7 +149,7 @@ button:hover {
   border: white solid 2px;
   border-radius: 8px;
   position: absolute;
-  top: 0px;
+  top: -30px;
   right: 0px;
 }
 
@@ -156,8 +170,18 @@ button:hover {
   z-index: 1;
   height: 768px;
   width: 1700px;
-  background-image: url('sun-vector-image.png');
-  background-repeat: no-repeat;
+}
+
+.sun-button-initial {
+  position: absolute;
+  top: 370px;
+  left: 50px;
+}
+
+.sun-info {
+  position: absolute;
+  top: 370px;
+  left: 50px;
 }
 
 .mercury-container {
@@ -169,6 +193,18 @@ button:hover {
   width: 31px;
 }
 
+.mercury-button-initial {
+  position: absolute;
+  top: 45px;
+  left: -20px;
+}
+
+.mercury-info {
+  position: absolute;
+  top: 45px;
+  left: -20px;
+}
+
 .venus-container {
   position: absolute;
   top: 347px;
@@ -178,6 +214,18 @@ button:hover {
   width: 75px;
 }
 
+.venus-button-initial {
+  position: absolute;
+  top: 90px;
+  left: 7px;
+}
+
+.venus-info {
+  position: absolute;
+  top: 90px;
+  left: 7px;
+}
+
 .earth-container {
   position: absolute;
   top: 344px;
@@ -185,6 +233,18 @@ button:hover {
   z-index: 1;
   height: 768px;
   width: 80px;
+}
+
+.earth-button-initial {
+  position: absolute;
+  top: 95px;
+  left: 10px;
+}
+
+.earth-info {
+  position: absolute;
+  top: 95px;
+  left: 10px;
 }
 
 .earth-container img {
@@ -200,6 +260,18 @@ button:hover {
   width: 42px;
 }
 
+.mars-button-initial {
+  position: absolute;
+  top: 55px;
+  left: -3px;
+}
+
+.mars-info {
+  position: absolute;
+  top: 55px;
+  left: -3px;
+}
+
 .astro-belt-container {
   position: absolute;
   top: 0px;
@@ -207,6 +279,25 @@ button:hover {
   z-index: 1;
   height: 768px;
   width: 2500px;
+}
+
+.astro-belt-button-initial {
+  position: absolute;
+  top: 370px;
+  left: 1225px;
+}
+
+.astro-belt-info {
+  position: absolute;
+  top: 370px;
+  left: 1225px;
+}
+
+.astro-belt-info p {
+  height: auto;
+  background-color: #060606;
+  opacity: 0.95;
+  padding: 10px;
 }
 
 .jupiter-container {
@@ -218,6 +309,24 @@ button:hover {
   width: 888px;
 }
 
+.jupiter-button-initial {
+  position: absolute;
+  top: 370px;
+  left: 380px;
+}
+
+.jupiter-info {
+  position: absolute;
+  top: 370px;
+  left: 380px;
+}
+.jupiter-info p {
+  height: auto;
+  background-color: #C5863D;
+  opacity: 0.8;
+  padding: 10px;
+}
+
 .saturn-container {
   position: absolute;
   top: 10px;
@@ -225,6 +334,18 @@ button:hover {
   z-index: 1;
   height: 768px;
   width: 749px;
+}
+
+.saturn-button-initial {
+  position: absolute;
+  top: 250px;
+  left: 450px;
+}
+
+.saturn-info {
+  position: absolute;
+  top: 250px;
+  left: 450px;
 }
 
 .uranus-container {
@@ -236,6 +357,18 @@ button:hover {
   width: 318px;
 }
 
+.uranus-button-initial {
+  position: absolute;
+  top: 150px;
+  left: 340px;
+}
+
+.uranus-info {
+  position: absolute;
+  top: 150px;
+  left: 340px;
+}
+
 .neptune-container {
   position: absolute;
   top: 230px;
@@ -245,6 +378,18 @@ button:hover {
   width: 308px;
 }
 
+.neptune-button-initial {
+  position: absolute;
+  top: 150px;
+  left: 330px;
+}
+
+.neptune-info {
+  position: absolute;
+  top: 150px;
+  left: 330px;
+}
+
 .kupier-belt-container {
   position: absolute;
   top: 0px;
@@ -252,6 +397,25 @@ button:hover {
   z-index: 1;
   height: 768px;
   width: 1299px;
+}
+
+.kupier-belt-button-initial {
+  position: absolute;
+  top: 60px;
+  left: 600px;
+}
+
+.kupier-belt-info {
+  position: absolute;
+  top: 60px;
+  left: 600px;
+}
+
+.kupier-belt-info p {
+  height: auto;
+  background-color: #060606;
+  opacity: 0.95;
+  padding: 10px;
 }
 
 .pluto-container {
