@@ -12,13 +12,9 @@ body {
 .container {
   background-color: #F0F0F0;
   width: 500px;
-  margin: 0 auto;
   padding: 0px 25px 20px;
 }
 
-.content-containter {
-  width: inherit;
-}
 
 h1 {
   font-family: trade-gothic-next-compressed, sans-serif;
@@ -114,9 +110,6 @@ footer p, a {
   }
 
   .container {
-    width: 500px;
-    max-width: 50%;
-    margin: 0 auto;
   }
 }
 
@@ -127,8 +120,7 @@ footer p, a {
   }
 
   .container {
-    width: 500px;
-    max-width: 50%;
+    max-width: 50vw;
     margin: 0 auto;
   }
 
