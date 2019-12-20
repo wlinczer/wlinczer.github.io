@@ -1,0 +1,287 @@
+body {
+  margin: 0px;
+}
+
+.site-container {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  color: #CECECE;
+}
+
+.intro{}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+.color-transition {
+  margin: 0px;
+}
+
+.bottom-layer{
+  position: relative;
+  z-index: 0;
+}
+
+.top-layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0px;
+}
+
+.intro-container {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  position:relative;
+  z-index: 1;
+}
+
+.author-date-content p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.context-container {
+  font-style: italic;
+}
+
+.article-container p, h3, h4 {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.section-one, .section-two, .section-three {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.intro-container, .section-four, .section-five, .section-six, .section-seven, .section-eight {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.section-one h4, .section-two h4, .section-three h4 {
+  border-top: solid 4px #478299;
+  border-bottom: solid 4px #478299;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-one {
+  background-color: #910000;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.section-two {
+  background-color: rgba(150, 61, 151, 0.75);
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.section-three {
+  background-color: rgba(0, 158, 220, 0.5);
+  color: black;
+  text-shadow: 2px 2px 3px white;
+}
+
+.section-four {
+  background-color: rgba(175, 224, 195, 0.5);
+  color: black;
+}
+
+.section-five {
+  background-color: rgba(204, 197, 215, 0.5);
+  color: black;
+  text-shadow: 2px 2px 3px white;
+}
+
+.section-six {
+  background-color: rgba(248, 243, 237, 0.5);
+  color: black;
+}
+
+.section-seven {
+  background-color: black;
+  color: white;
+}
+
+.section-eight {
+  background-color: #e3e3e3;
+  color: #1c1c1c;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .column-one {
+    flex: 50%
+  }
+
+  .column-two {
+    flex: 50%
+  }
+
+  #pullquote-one {
+    margin-top: 1350px;
+  }
+
+  #pullquote-two {
+    margin-top: 990px;
+  }
+
+  #pullquote-three {
+    margin-top: 41px;
+  }
+
+  #pullquote-four {
+    margin-top: 500px;
+  }
+
+  #pullquote-five {
+    margin-top: 550px;
+  }
+
+  #pullquote-six {
+    margin-top: 1265px;
+  }
+
+  #pullquote-seven {
+    margin-top: 1290px;
+  }
+
+  #pullquote-eight {}
+
+  #pullquote-nine {
+    margin-top: 700px;
+  }
+
+  #pullquote-ten {}
+
+  #pullquote-eleven {
+    margin-top: 1460px;
+  }
+
+  #pullquote-twelve {
+    margin-top: 40px;
+  }
+
+  #pullquote-thirteen {
+    margin-top: 640px;
+  }
+
+  #pullquote-fourteen {
+    margin-top: 1440px;
+  }
+
+  #pullquote-fifteen {
+    margin-top: 395px;
+  }
+
+  #photo-one {
+    margin: auto;
+    width: 70%;
+  }
+
+  #photo-two {
+    margin: auto;
+    margin-top: 540px;
+  }
+
+  #photo-three {
+    margin: auto;
+    width: 55%;
+  }
+
+  #photo-four {
+    margin: auto;
+    margin-top: 500px;
+  }
+
+  #photo-five {
+    margin: auto;
+    margin-top: 120px;
+  }
+
+  #photo-six {
+    margin: auto;
+    width: 80%;
+  }
+
+  #photo-seven {
+    margin-top: 410px;
+  }
+
+  #photo-eight {
+    margin-top: 290px;
+  }
+
+  #oddball-one {
+    margin-top: -70px;
+  }
+
+  #oddball-two {
+    margin-top: -220px;
+  }
+
+  #oddball-three {
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    min-width: 1024px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .tri-flex {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .column-one-third {
+    flex: 33%;
+  }
+
+  .column-two-third {
+    flex: 66%;
+  }
+}
